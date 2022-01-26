@@ -72,3 +72,19 @@ public class RockSciPaper {
 	}
 
 }
+
+
+// 1, 2, 3이 아닌 경우 무효처리하기
+//		if(usernum != 1 && usernum != 2 && usernum != 3) {
+//			System.out.println("잘못 입력하셨습니다.");
+//			return;  // main 클래스의 호출부인 -> test.game(); 으로 돌아감.
+//			
+//		}
+//		
+//		if(usernum > 3 || usernum < 1) {
+//			
+//		}
+//		
+//		if(!(usernum == 1 || usernum == 2 || usernum == 3)) {
+//			
+//		}

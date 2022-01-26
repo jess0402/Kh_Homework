@@ -34,4 +34,33 @@ public class TypeTest {
 		
 	}
 
+
+// 		else if (ch >= '가' && ch <= '힣')
+
+
+//	public void charTest() {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println();
+//		
+//		char ch = sc.next().charAt(0);
+//		
+//		String result = "";
+//		
+//		if(Character.isDigit(ch))
+//			result = "숫자";
+//		else if (Character.isUpperCase(ch) || Character.isLowerCase(ch))
+//			result = "알파벳";
+
+//		System.out.println("입력하신 문자 " + ch  + "는" + result + "입니다.");
+//	}
+
+
+//		else if(Test.isKoreanCharacter(ch))
+//			result = "한글";
+//		
+	public static boolean isKoreanCharacter(char ch) {
+//		boolean bool = ch >= '가' && ch <= '힣';
+//		return bool;
+		return ch >= '가' && ch <= '힣';
+	}
 }
