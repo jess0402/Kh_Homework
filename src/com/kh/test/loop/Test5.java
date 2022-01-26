@@ -1,3 +1,6 @@
+// 220126 과제
+// 회원정보를 입력 받아 저장하고 출력하는 프로그램
+
 package com.kh.test.loop;
 
 import java.util.Scanner;

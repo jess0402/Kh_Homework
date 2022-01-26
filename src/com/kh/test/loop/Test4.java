@@ -1,3 +1,6 @@
+// 220126 과제
+//	문자열과 문자열에서 검색될 문자를 입력 받아 문자열에 그 문자가 몇 개이었는지 개수를 확인하는 프로그램
+
 package com.kh.test.loop;
 
 import java.util.Scanner;

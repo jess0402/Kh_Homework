@@ -1,3 +1,6 @@
+// 220126 과제
+// 입력받은 정수의 구구단 출력하는 프로그램  
+
 package com.kh.test.loop;
 
 import java.util.Scanner;

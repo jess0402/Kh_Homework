@@ -1,3 +1,6 @@
+// 220126 과제
+// 1부터 사용자로부터 입력 받은 정수까지 존재하는 짝수의 합 출력 
+
 package com.kh.test.loop;
 
 import java.util.Scanner;
