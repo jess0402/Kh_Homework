@@ -35,10 +35,6 @@ public class Test8 {
 		
 		int qty2 = 0;
 		int total = 0; 
-		
-//		String[] menu = new String[num];
-//		int[] price = new int[num]; 
-//		
 		char yn = ' ';
 		
 		while(true) {
