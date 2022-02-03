@@ -29,7 +29,7 @@ public class Test6 {
 		int mid = len / 2;
 		
 		for(int i = 0; i < arr.length; i++) {
-			if(mid < i) {
+			if(i > mid) {
 				arr[i] = mid--;
 				continue;
 			}
