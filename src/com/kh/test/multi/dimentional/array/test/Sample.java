@@ -7,7 +7,8 @@ public class Sample {
 	public static void main(String[] args) {
 		Sample hw = new Sample();
 //		hw.exercise1();
-		hw.exercise2();
+//		hw.exercise2();
+		hw.exercise3();
 	}
 
 	public void exercise1() {
@@ -31,19 +32,31 @@ public class Sample {
 	
 	public void exercise2() {
 			Random rnd = new Random();
-			int sum = 0;
+			int rowsum = 0;
+			int colsum = 0;
 		
 			// 1. 3행4열 2차원배열 선언 및 생성
 			int[][] arr = new int[3][4];
 		
 			// 2. 0행0열부터 2행2열까지 1부터 100사이의 임의의 정수값 기록해 넣음
 			for(int i = 0; i < arr.length; i++) {
-				for(int j = 0; j < arr[0].length-1; j++) {
-					arr[i][j] = rnd.nextInt(100)+1;	
-					sum += arr[i][j];	
+				if(i<3) {
+					for(int j = 0; j < arr[0].length-1; j++) {
+						arr[i][j] = rnd.nextInt(100)+1;	
+						rowsum += arr[i][j];	
+					}
+						arr[i][3] = rowsum;
+						rowsum = 0;
 				}
-					arr[i][3] = sum;
-					sum = 0;
+
+				
+				else {
+					for(int k = 0; k < 3; k++) {
+						
+					}
+					
+				}					
+					
 			}
 			// 3. 표 그리기
 			System.out.println("   0열 1열 2열 3열");
@@ -57,4 +70,24 @@ public class Sample {
 			}
 
 		}
+	
+	public void exercise3() {
+		Random rnd = new Random();
+		int rowsum = 0;
+	
+		// 1. 3행4열 2차원배열 선언 및 생성
+		int[][] arr = new int[4][4];
+	
+		// 2. 0행0열부터 2행2열까지 1부터 100사이의 임의의 정수값 기록해 넣음
+		for(int i = 0; i < arr.length; i++) {
+			for(int j = 0; j < arr[0].length-1; j++) {
+				arr[i][j] = rnd.nextInt(100)+1;	
+				rowsum += arr[i][j];	
+			}
+				arr[i][3] = rowsum;
+				rowsum = 0;
+		}
+	
 	}
+
+}
