@@ -15,7 +15,7 @@ public class Run {
 		mm.setEmail("abcde@naver.com");
 		
 		System.out.println("**********정보**********");
-		System.out.printf("번호 : %s%n", mm.getMemberId());
+		System.out.printf("아이디 : %s%n", mm.getMemberId());
 		System.out.printf("비밀번호 : %s%n", mm.getMemberPwd());
 		System.out.printf("이름 : %s%n", mm.getMemberName());
 		System.out.printf("나이 : %d%n", mm.getAge());
