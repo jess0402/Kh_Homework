@@ -33,8 +33,12 @@ public class EmpTest {
 				e.empInput();
 			else if(choice == 2)
 				e = null;
-			else if(choice == 3) 
+			else if(choice == 3) {
+				if(e == null)
+					System.out.println("사원정보가 없습니다.");
 				e.empOutput();
+			}
+
 			else if(choice == 9) {
 				System.out.println("종료되었습니다.");
 				break;
