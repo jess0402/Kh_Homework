@@ -19,26 +19,26 @@ public class Employee {
 		Scanner sc = new Scanner(System.in);
 		
 		System.out.print("사번 : ");
-		empNo = sc.nextInt();
+		setEmpNo(sc.nextInt());
 		System.out.print("이름 : ");
-		empName = sc.next();
+		setEmpName(sc.next());
 		System.out.print("소속부서 : ");
-		dept = sc.next();
+		setDept(sc.next());
 		System.out.print("직급 : ");
-		job = sc.next();
+		setJob(sc.next());
 		System.out.print("나이 : ");
-		age = sc.nextInt();
+		setAge(sc.nextInt());
 		System.out.print("성별 : ");
-		gender = sc.next().charAt(0);
+		setGender(sc.next().charAt(0));
 		System.out.print("급여 : ");
-		salary = sc.nextInt();
+		setSalary(sc.nextInt());
 		System.out.print("보너스포인트 : ");
-		bonusPoint = sc.nextDouble();
-		System.out.print("핸드폰 : ");
-		phone = sc.nextLine();
+		setBonusPoint(sc.nextDouble());
 		sc.nextLine();
+		System.out.print("핸드폰 : ");
+		setPhone(sc.nextLine());
 		System.out.print("주소 : ");
-		address = sc.nextLine();
+		setAddress(sc.nextLine());
 		
 	}
 	
@@ -64,6 +64,9 @@ public class Employee {
 	}
 	public void setEmpName(String empName) {
 		this.empName = empName;
+	}
+	public void setDept(String dept) {
+		this.dept = dept;
 	}
 	public void setJob(String job) {
 		this.job = job;
