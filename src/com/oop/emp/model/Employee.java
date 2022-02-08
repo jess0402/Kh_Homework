@@ -56,6 +56,8 @@ public class Employee {
 		System.out.printf("주소 : %s%n", getAddress());
 	}
 	
+
+	
 	// 3. getter/setter 메서드
 	
 	// setter

@@ -6,6 +6,7 @@ public class Run {
 
 	public static void main(String[] args) {
 		Member mm = new Member();
+		
 		mm.setMemberId("00000");
 		mm.setMemberPwd("12345");
 		mm.setMemberName("장은성");
