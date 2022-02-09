@@ -33,7 +33,7 @@ public class EmpTest {
 			if(choice == 1)
 				e.empInput();
 			else if(choice ==2) {
-				modifyMenu(e);
+				modifyMenu(e);   	// 매개인자로 Employee객체를 전달함.
 				continue;
 			}
 
@@ -56,6 +56,7 @@ public class EmpTest {
 		
 	}
 	
+
 	public void modifyMenu(Employee e) {
 		Scanner sc = new Scanner(System.in);
 		
