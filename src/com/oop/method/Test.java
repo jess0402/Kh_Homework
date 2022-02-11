@@ -59,7 +59,8 @@ public class Test {
     public void test3(Test t) {
         t.a = 10; // t3.a = 10
         System.out.println("원래 a : " + a); //100 
-        this.a = 200; // 
+        this.a = 200; // this는 누구로부터 메서드가 호출되었는지 봐야함 => t.test(t3)이므로 t
+        		      // 그래서 main에서 만들어진 t객체의 a 값이 100에서 200으로 바뀐 것.
         System.out.println("바뀐 a : " + a); // 200
         System.out.println(t.a); //10..?
     }
