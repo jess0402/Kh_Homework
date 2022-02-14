@@ -3,6 +3,8 @@ package member.run;
 import member.controller.MemberManager;
 import member.model.vo.Gold;
 import member.model.vo.Silver;
+import member.model.vo.VVip;
+import member.model.vo.Vip;
 
 public class Run {
 
@@ -14,6 +16,8 @@ public class Run {
 		m.goldInsert(new Gold("김회장", "Gold",1000));
 		m.goldInsert(new Gold("이회장", "Gold",2000));
 		m.goldInsert(new Gold("오회장", "Gold",3000));
+		m.vipInsert(new Vip("이부자", "Vip",10000));
+		m.vvipInsert(new VVip("김갑부", "VVip",100000));
 		m.printData();
 
 	}
