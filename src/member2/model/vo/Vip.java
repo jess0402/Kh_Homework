@@ -1,4 +1,4 @@
-package member.model.vo;
+package member2.model.vo;
 
 public class Vip extends Member {
 	
