@@ -2,6 +2,7 @@ package member2.run;
 
 import member2.controller.MemberManager;
 import member2.model.vo.Gold;
+import member2.model.vo.Ruby;
 import member2.model.vo.Silver;
 import member2.model.vo.VVip;
 import member2.model.vo.Vip;
@@ -18,7 +19,9 @@ public class Run {
 		mgr.insertMember(new Gold("오회장", "Gold",3000));
 		mgr.insertMember(new Vip("이순신", "Vip",10000));
 		mgr.insertMember(new VVip("신사임당", "VVip",100000));
+		mgr.insertMember(new Ruby("세종", "Ruby", 500000));
 		mgr.printData();
+		
 	}
 
 }

@@ -11,8 +11,13 @@ public class Gold extends Member {
 	
 	// 이자포인트 getter
 	@Override
-	public double getInterest() {
+	public double getEjaPoint() {
 		return super.getPoint() * 0.05;
+	}
+
+	@Override
+	public int buy(int price) {
+		return (int)(price * 0.95);
 	}
 	
 

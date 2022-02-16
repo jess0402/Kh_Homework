@@ -1,6 +1,6 @@
 package member2.model.vo;
 
-public class Member {
+public class Member implements Buyable {
 	
 	private String name;
 	private String grade;
@@ -42,10 +42,15 @@ public class Member {
 	}
 	
 	// 이자포인트 getter
-	public double getInterest() {
+	public double getEjaPoint() {
 		return getPoint();
 	}
-	
+
+
+	@Override
+	public int buy(int price) {
+		return 0;
+	}
 	
 	
 }
