@@ -1,4 +1,4 @@
-package com.oop.shape.mode;
+package com.oop.shape.model;
 
 public class Rectangle extends Shape{
 	

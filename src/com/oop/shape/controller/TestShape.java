@@ -1,6 +1,6 @@
 package com.oop.shape.controller;
 
-import com.oop.shape.mode.*;
+import com.oop.shape.model.*;
 
 public class TestShape {
 
