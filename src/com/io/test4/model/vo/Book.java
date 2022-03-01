@@ -34,7 +34,7 @@ public class Book implements Serializable {
 		this.title = title;
 	}
 
-	public String getAuthor() {
+	public String getAuthor() { 
 		return author;
 	}
 
@@ -63,7 +63,8 @@ public class Book implements Serializable {
 		Date date = dates.getTime();
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 출간");
 		String formattedDate = sdf.format(date);
-		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", dates=" + formattedDate + "]";
+		return "Book [title=" + title + ", author=" + author 
+				+ ", price=" + price + ", dates=" + formattedDate + "]";
 	}
 	
 	
