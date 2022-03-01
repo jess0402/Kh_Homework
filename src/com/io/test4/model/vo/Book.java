@@ -34,6 +34,7 @@ public class Book implements Serializable {
 		this.title = title;
 	}
 
+<<<<<<< HEAD
 	public String getAuthor() { 
 		return author;
 	}
@@ -65,6 +66,38 @@ public class Book implements Serializable {
 		String formattedDate = sdf.format(date);
 		return "Book [title=" + title + ", author=" + author 
 				+ ", price=" + price + ", dates=" + formattedDate + "]";
+=======
+	public String getAuthor() {
+		return author;
+	}
+
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+
+	public int getPrice() {
+		return price;
+	}
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+
+	public Calendar getDates() {
+		return dates;
+	}
+
+	public void setDates(Calendar dates) {
+		this.dates = dates;
+	}
+
+	@Override
+	public String toString() {
+		Date date = dates.getTime();
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 출간");
+		String formattedDate = sdf.format(date);
+		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", dates=" + formattedDate + "]";
+>>>>>>> refs/remotes/origin/master
 	}
 	
 	
