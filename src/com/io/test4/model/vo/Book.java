@@ -7,17 +7,21 @@ import java.util.Date;
 
 public class Book implements Serializable {
 	
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = -8064907533291493923L;
 	
 	private String title;
-	private String author;
+	private String author; 
 	private int price;
 	private Calendar dates;
 	
-	public Book() {
-		super();
-	}
+	public Book(){}
 
+	/**
+	 * @param title
+	 * @param author
+	 * @param price
+	 * @param dates
+	 */
 	public Book(String title, String author, int price, Calendar dates) {
 		super();
 		this.title = title;
@@ -34,39 +38,6 @@ public class Book implements Serializable {
 		this.title = title;
 	}
 
-<<<<<<< HEAD
-	public String getAuthor() { 
-		return author;
-	}
-
-	public void setAuthor(String author) {
-		this.author = author;
-	}
-
-	public int getPrice() {
-		return price;
-	}
-
-	public void setPrice(int price) {
-		this.price = price;
-	}
-
-	public Calendar getDates() {
-		return dates;
-	}
-
-	public void setDates(Calendar dates) {
-		this.dates = dates;
-	}
-
-	@Override
-	public String toString() {
-		Date date = dates.getTime();
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 출간");
-		String formattedDate = sdf.format(date);
-		return "Book [title=" + title + ", author=" + author 
-				+ ", price=" + price + ", dates=" + formattedDate + "]";
-=======
 	public String getAuthor() {
 		return author;
 	}
@@ -90,16 +61,18 @@ public class Book implements Serializable {
 	public void setDates(Calendar dates) {
 		this.dates = dates;
 	}
-
-	@Override
-	public String toString() {
-		Date date = dates.getTime();
+	
+	public String formatCalendar(Calendar cal) {
+		Date d = new Date(cal.getTimeInMillis());
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy년 MM월 dd일 출간");
-		String formattedDate = sdf.format(date);
-		return "Book [title=" + title + ", author=" + author + ", price=" + price + ", dates=" + formattedDate + "]";
->>>>>>> refs/remotes/origin/master
+		return sdf.format(d); 
 	}
 	
+	@Override
+	public String toString() {
+		return "Book [title=" + title + ", author=" + author 
+			 + ", price=" + price + ", dates=" + formatCalendar(dates) + "]";
+	}
 	
 	
 	

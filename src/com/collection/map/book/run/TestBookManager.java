@@ -71,7 +71,7 @@ Scanner sc = new Scanner(System.in);
 		
 		System.out.print("도서 분류코드를 입력하세요(1.인문/2.자연과학/3.의료/4.기타): ");
 		int category = sc.nextInt();
-		sc.nextLine();
+		sc.nextLine();  // 개행문자 제거
 		
 		System.out.print("도서 제목을 입력하세요: ");
 		String title = sc.nextLine();
