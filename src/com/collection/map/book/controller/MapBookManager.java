@@ -68,6 +68,7 @@ Map<String, Book> booksMap;
 		Book[] bookArr = new Book[booksMap.size()];
 		List<Map.Entry<String, Book>> entryList = new ArrayList<>(booksMap.entrySet());
 		
+		// = Collection.sort(entryList, new AscCategory())
 		entryList.sort(new Comparator<Map.Entry<String, Book>>() {
 	    @Override
 	    public int compare(Map.Entry<String, Book> o1, Map.Entry<String, Book> o2) {
